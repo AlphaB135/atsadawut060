@@ -1,0 +1,108 @@
+.menu li{
+  display: inline;
+  margin: 10px;
+}
+.menu a{
+  /* เอาขีดเส้นใต้ออก */
+  text-decoration: none;
+}
+.logo{
+  float: left;
+}
+.search{
+  float: left;
+}
+.menu{
+  float: right;
+}
+.nav{
+  border: 1px solid red;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+.clear{
+  clear: both;
+}
+/*  */
+.menuBox li{
+  display: inline;
+  margin: 10px;
+}
+.menuBox a{
+  /* เอาขีดเส้นใต้ออก */
+  text-decoration: none;
+}
+.header{
+  width: 90%;
+  border: 1px solid red;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sectionMain {
+  border: 1px solid red;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+.topic {
+  text-align: center;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.menuName {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.rating {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.category {
+  display: block;
+}
+/* ************************* */
+.contener{
+width: 90%;
+  border: 1px solid red;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.bigbox img{
+width: 130%;
+height: 500px;
+display: flex;
+
+}
+.box{
+background-color: beige;
+width: 26%;
+display: flex;
+flex-direction: column;
+margin-right: 1%;
+
+}
+.topic{
+text-align: center;
+}
+.boxn{
+margin: 10px;
+display: flex;
+justify-content: center;
+}
+.text{
+margin-left: 15px;
+align-self: center;
+display: block;
+}
