@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.second{
+    position: relative;
+    top: 30px; ;
+    left: 100px;
+    /* right: ; */
+}
+.nav{
+    margin: 20px;
+    position: relative;
+     /*ยืดจากตำแหน่ง  */
+    background-color: lightblue;
+}
+.header{
+    position: absolute;
+    /* ยืดจากตัว */
+    background-color: yellow;
+    /* top: 0px; */
+    /* right: 100px; */
+    bottom: 20px;
+}
+.footer{
+    width: 50px;
+    position: fixed;
+    /* ยึดตาม browser */
+    background-color: aqua;
+    top: 20px;
+    right: 50px;
+}
+
+/******** Float ****/
+p.box {
+    float: left; /* เมื่อขบายหน้าจะมันจะลอยไปชิดมุมซ้าย */
+    width: 300px;
+    background-color: yellow;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid red;
+}
+.newrow {
+    clear: left;
+
+}
+.ibass{
+    float: left;
+    width: 300px;
+    margin: 15px;
+}
