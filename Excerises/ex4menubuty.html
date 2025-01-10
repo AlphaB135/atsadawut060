@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic html</title>
-    <link rel="stylesheet" href="">
+    <title>ต้มยำกุ้งน้ำข้น</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        ol, ul {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .comment-form {
+            margin-top: 40px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            resize: vertical;
+        }
+        button {
+            background-color: #FF6F61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #E24A3D;
+        }
+        a {
+            color: #FF6F61;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>ต้มยำกุ้งน้ำข้น</h1>
-    <img src="/Excerises/images/pic5.jpg  " alt="ต้มยำกุ้งน้ำข้น" width="500px"> 
+    <img src="/Excerises/images/pic5.jpg" alt="ต้มยำกุ้งน้ำข้น" width="500px"> 
     <h2>วัตถุดิบ</h2>
     <ol>
         <li>กุ้งขนาดแล้วแต่ชอบ 6 ขีด</li>
@@ -29,7 +109,7 @@
     <h3>STEP 1 : นำกุ้งมาปลอกเปลือกและผ่าหลังเอาเส้นดำๆออก</h3>
     <img src="/Excerises/images/pic6.jpg" alt="วรธีทำ" width="300px">
 
-    <h3>STEP 2 :ทำราดหน้าหมูนุ่ม</h3>
+    <h3>STEP 2 : ทำราดหน้าหมูนุ่ม</h3>
     <img src="/Excerises/images/pic7.jpg" alt="เครื่องปรุง" width="300px">
     <ol>
         <li>เอาข่า ตะไคร้ ใบมะกรูดมาล้างให้สะอาด แล้วหั่นเตรียมไว้</li>
@@ -55,11 +135,11 @@
         <li>โรยด้วยพริกขี้หนูและผักชีฝรั่ง</li>
     </ol>
 
-    <table border="2">
+    <table>
         <tr>
-            <td>สารอาหาร</td>
-            <td>ปริมาณ</td>
-            <td>หน่วย</td>
+            <th>สารอาหาร</th>
+            <th>ปริมาณ</th>
+            <th>หน่วย</th>
         </tr>
         <tr>
             <td>โปรตีน</td>
@@ -94,14 +174,15 @@
         </tr>
     </table>
 
-    <p>แหล่งที่มา:</p>
-    <a href="https://www.wongnai.com/recipes/ugc/06c21e83ed584ed4996a129af5c3231c">Wongnai</a>
-<br>
-    <h2>แสดงความคิดเห็น</h2>
-    <form action="#" method="post">
-        <label for="comment">ความคิดเห็น:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="เขียนความคิดเห็นของคุณที่นี่..."></textarea><br><br>
-        <button type="submit">ส่งความคิดเห็น</button>
-    </form>
+    <p>แหล่งที่มา: <a href="https://www.wongnai.com/recipes/ugc/06c21e83ed584ed4996a129af5c3231c" target="_blank">Wongnai</a></p>
+
+    <div class="comment-form">
+        <h2>แสดงความคิดเห็น</h2>
+        <form action="#" method="post">
+            <label for="comment">ความคิดเห็น:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="เขียนความคิดเห็นของคุณที่นี่..."></textarea><br><br>
+            <button type="submit">ส่งความคิดเห็น</button>
+        </form>
+    </div>
 </body>
 </html>
