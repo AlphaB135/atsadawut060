@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Box-model</title>
+    <style>
+        *:before,
+        :after{ /* แจกให้ทุกบล็อก  */
+            box-sizing: border-box;
+        }
+        p { 
+            width: 50%; /* ความกว้าง 50 % ของจอเบราว์เซอร์ */
+            color: blue;
+            background-color: aqua;
+        }
+
+        span.text { /* class */
+            background-color: yellow;
+            color: red;
+            /* display: none; */ /* ใช้เมื่ออยากแอบ element บางอย่าง */
+        }
+
+        a {
+            background-color: lightgreen;
+        }
+
+        /* Box model */
+        .box {
+            width: 300px; /* กำหนดความกว้างของ box */
+            background-color: rgb(102, 255, 0);
+            border: 2px dashed red; /* ขนาด + รูปแบบของเส้น + สี */
+            padding: 10px; /* ทำให้ไม่ชิดขอบ */
+        }
+
+        .box-2, 
+        .box-3,
+        .box{ /* แก้ไขให้ทั้งสองคลาสใช้ค่าเดียวกัน */
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: aquamarine;
+            width: 300px;
+            border: 2px solid black;
+            margin: 100px 10px 30px 200px; /* กำหนดตำแหน่ง บน ขวา ล่าง ซ้าย */
+            border-radius: 30px;
+        }
+
+        .box-3 {
+            
+            background-color: aquamarine;
+            width: 300px;
+        }
+
+        ul.menu {
+            list-style-type: none; /* ลบจุดจากรายการ */
+            padding: 0;
+        }
+
+        ul.menu > li {
+            display: inline-block; /* เปลี่ยนจาก inline เป็น block เพื่อให้แสดงในแถวเดียว */
+            margin-right: 15px;
+        }
+
+        ul.menu a {
+            text-decoration: none;
+        }
+
+        a.hover {
+            background-color: yellow;
+        }
+
+        a.visited {
+            color: rgb(138, 138, 138);
+        }
+        .pic {
+            width:300px;
+            border-radius: 20px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+
+    <ul class="menu"> 
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+    </ul>
+
+    <a href="#">google</a>
+    <a href="#">Home</a>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet 
+        <span class="text">consectetur</span> adipisicing elit. 
+        Doloribus deleniti illum quod, porro nisi fuga nam odio dicta 
+        facilis sed voluptatem natus libero dolorum sunt iusto magni,
+        mollitia, eius pariatur?
+    </p>
+
+    <div class="box-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nam, odio? Explicabo soluta sit voluptates, sunt, consectetur 
+        saepe dicta eum accusantium nulla ipsa impedit rerum laudantium,
+        omnis cupiditate iste quis.
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nam, odio? Explicabo soluta sit voluptates, sunt, consectetur 
+        saepe dicta eum accusantium nulla ipsa impedit rerum laudantium,
+        omnis cupiditate iste quis.
+    </div>
+
+    <div class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nam, odio? Explicabo soluta sit voluptates, sunt, consectetur 
+        saepe dicta eum accusantium nulla ipsa impedit rerum laudantium,
+        omnis cupiditate iste quis.
+    </div>
+    <img src="https://www.prachachat.net/wp-content/uploads/2024/09/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87-1024x683.png" alt="" class="pic">
+    <img src="https://www.prachachat.net/wp-content/uploads/2024/09/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87-1024x683.png" alt="" class="pic">
+    <img src="https://www.prachachat.net/wp-content/uploads/2024/09/%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87-1024x683.png" alt="" class="pic">
+</body>
+</html>
